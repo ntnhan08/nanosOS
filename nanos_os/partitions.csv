@@ -1,0 +1,7 @@
+# NanosOS partition table — ESP32-S3 16MB Flash
+# Name,         Type,  Sub,   Offset,    Size
+nvs,            data,  nvs,   0x9000,    0x6000
+phy_init,       data,  phy,   0xF000,    0x1000
+nanos_app,      app,   ota_0, 0x10000,   0x1F0000
+nanos_fs,       data,  0xFE,  0x200000,  0x800000
+assets,         data,  0xFD,  0xA00000,  0x600000
